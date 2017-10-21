@@ -93,6 +93,49 @@ imageHaveFinshedLoading = !imageHaveFinshedLoading
 print("Is Loading finished \(imageHaveFinshedLoading)")
 
 
+// 9. Collections, Tupples and Enumeration
+
+var firstArray : [Float]
+var secondArray : [String] = ["Item 1", "Item 2"]
+var thirdArray : [Float] = []
+
+// display the string array
+print(secondArray)
+// add a new item at specific index position
+secondArray[0] = "New Item"
+print(secondArray)
+secondArray.append("Item 3")
+print(secondArray)
+secondArray.remove(at: 2)
+print(secondArray)
+secondArray.insert("Item New 3", at: 2)
+print(secondArray)
+print("the count of the array is \(secondArray.count)")
+
+if secondArray.isEmpty {
+    print("the array is empty")
+}else{
+    print("the array is not empty and the size is \(secondArray.count)")
+}
+
+secondArray.removeAll()
+
+if secondArray.isEmpty {
+    print("the array is empty")
+}else{
+    print("the array is not empty and the size is \(secondArray.count)")
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
