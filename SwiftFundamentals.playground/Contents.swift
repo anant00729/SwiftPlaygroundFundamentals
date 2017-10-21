@@ -118,13 +118,38 @@ if secondArray.isEmpty {
     print("the array is not empty and the size is \(secondArray.count)")
 }
 
-secondArray.removeAll()
+var item = secondArray[1]
 
-if secondArray.isEmpty {
-    print("the array is empty")
-}else{
-    print("the array is not empty and the size is \(secondArray.count)")
-}
+var arrayOfSizeTwo = secondArray[0...1]
+print(arrayOfSizeTwo)
+
+// softHand
+var addNumberArray = [1,2,3,4]
+addNumberArray += [5]
+print(addNumberArray)
+
+// 10. Explore the Dictionaries
+
+var mixedTupple : [(Id:Int,location:String)] = [(1,"Item 1"),(2,"Item 2"),(3,"Item 3")]
+
+print("The size of the array is \(mixedTupple.count)")
+
+let location = mixedTupple.first{$0.Id == 5}? .location ?? "Kuch Bhi Nai"
+
+print(location)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
